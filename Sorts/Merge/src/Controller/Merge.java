@@ -5,7 +5,6 @@ public class Merge {
             
         if (start < end){
             int half = (start + end) / 2 ;
-
             Mergesort(L,start, half);
             Mergesort(L,half + 1, end);
 
@@ -25,6 +24,7 @@ public static void together(int[] L, int start, int half, int end){
     for (int j = 0; j < l2; ++j){
         right[j] = L[half + 1 + j];
     }
+       
     int i =0, j = 0, k = start;
     
     while(i < l1 && j < l2){
